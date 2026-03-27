@@ -92,15 +92,17 @@ const HeroSection = () => {
               <button 
                 onClick={connectWallet} 
                 style={{
-                  padding: '12px 24px', 
-                  fontSize: '18px', 
-                  cursor: 'pointer', 
-                  backgroundColor: account ? '#28a745' : '#007bff', 
-                  color: 'white', 
-                  border: 'none', 
-                  borderRadius: '8px',
-                  fontWeight: 'bold',
-                  transition: 'background-color 0.3s'
+                  background: '#5b656f',
+                  color: '#ffffff',
+                  fontWeight: 500,
+                  padding: '10px',
+                  width: '150px',
+                  borderTopLeftRadius: '15px',
+                  borderBottomRightRadius: '15px',
+                  border: 'none',
+                  marginTop: '25px',
+                  position: 'relative',
+                  cursor: 'pointer'
                 }}
               >
                 {account ? formatAddress(account) : 'Connect Wallet'}
